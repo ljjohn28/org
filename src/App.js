@@ -8,7 +8,7 @@ import Footer from './componentes/Footer';
 import {v4 as uuid} from "uuid"
 
 function App() {
-  const [mostrarFormulario, actualizarMostrar]= useState(false)
+  const [mostrarFormulario, actualizarMostrar]= useState(true)
   const [colaboradores, actualizarColaboradores]= useState([{
     id: uuid(),
     equipo: "Front End",
@@ -109,7 +109,7 @@ function App() {
   }
   // Eliminar Colaborador 
   const eliminarColaborador= (id)=>{
-    const nuevosColaboradores = colaboradores.filter((colaborador)=>colaborador.id =! id )
+    const nuevosColaboradores = colaboradores.filter((colaborador)=>colaborador.id !== id )
     actualizarColaboradores(nuevosColaboradores)
   }
   // Actualizar color 

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import Header from './componentes/Header/Header.jsx'
+import Header from './componentes/Header/Header.jsx';
 import Formulario from './componentes/formulario/Formulario';
 import MiOrg from './componentes/MiOrg';
 import Equipo from './componentes/Equipo';
